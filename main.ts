@@ -1,5 +1,5 @@
-import { simpleTest } from './functions/handler';
+import { httpMessage } from './src/functions/hello';
 
 if (require.main === module) {
-  simpleTest();
+  console.log('DEBUG: ', httpMessage('hello !'));
 }
