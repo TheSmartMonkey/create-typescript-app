@@ -34,6 +34,8 @@ build
 ```
 |   .eslintrc.json
 |   .gitignore
+|   .prettierignore
+|   .prettierrc.json
 |   jest.config.ts
 |   junit.xml
 |   LICENSE
