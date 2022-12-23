@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "main": "dist/main.js",
   "scripts": {
-    "start": "tsc && node dist/main.js",
-    "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "lint": "eslint src --ext .ts",
+    "clear": "rmdir /s \"dist\"",
+    "build": "tsc",
+    "start": "npm run build && node dist/main.js",
+    "test": "jest"
   },
   "license": "MIT",
   "devDependencies": {
@@ -18,6 +20,7 @@
     "jest-junit": "^15.0.0",
     "ts-jest": "^29.0.3",
     "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.1.1",
     "typescript": "^4.9.4"
   },
   "description": "Simple typescript app with jest for small and fast projects"

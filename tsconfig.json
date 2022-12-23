@@ -1,13 +1,40 @@
 {
-    "compilerOptions": {
-        "module": "commonjs",
-        "esModuleInterop": true,
-        "target": "es6",
-        "moduleResolution": "node",
-        "sourceMap": true,
-        "outDir": "dist"
-    },
-    "lib": [
-        "es2015"
-    ]
+	"extends": "./tsconfig.paths.json",
+	"compilerOptions": {
+		"lib": [
+			"DOM",
+			"ESNext"
+		],
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"removeComments": true,
+		"sourceMap": true,
+		"target": "ES2021",
+		"outDir": "dist",
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		/* Type Checking */
+		"strict": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"noUnusedParameters": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+		"skipLibCheck": true,
+	},
+	"include": [
+		"**/*.ts",
+	],
+	"exclude": [
+		"node_modules/**/*",
+		".webpack/**/*",
+		"_warmup/**/*",
+		".vscode/**/*",
+		"jest.config.ts"
+	],
+	"ts-node": {
+		"require": [
+			"tsconfig-paths/register"
+		]
+	}
 }

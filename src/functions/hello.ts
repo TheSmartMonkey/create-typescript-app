@@ -1,4 +1,4 @@
-import { HttpMessage } from '../models/hello.model';
+import { HttpMessage } from '@models/hello.model';
 
 export function message() {
   console.log('hello world !');
