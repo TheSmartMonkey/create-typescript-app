@@ -15,7 +15,12 @@ export default {
   roots: ['<rootDir>'],
   testEnvironment: 'node',
   transform: {
-    '\\.(ts)$': 'ts-jest',
+    '^.+\\.tsx?$': [
+      'ts-jest',
+      {
+        isolatedModules: true,
+      },
+    ],
     '\\.html?$': [
       'esbuild-jest',
       {
