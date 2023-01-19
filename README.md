@@ -46,17 +46,17 @@ build
 |   tree.txt
 |   tsconfig.json
 |   tsconfig.paths.json
-|   
+|
 +---src
     |   tree.txt
-    |   
+    |
     +---functions
     |       hello.test.ts
     |       hello.ts
-    |       
+    |
     +---libs
     |       .gitkeep
-    |       
+    |
     +---models
             hello.model.ts
 ```

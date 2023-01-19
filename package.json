@@ -8,7 +8,9 @@
     "build": "tsc",
     "start": "npm run build && node dist/main.js",
     "watch": "nodemon",
-    "test": "jest"
+    "test": "jest",
+    "format": "npx prettier --write .",
+    "format:check": "npx prettier --check ."
   },
   "license": "MIT",
   "devDependencies": {
