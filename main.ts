@@ -1,12 +1,13 @@
+import { logger } from '@common/logger';
 import { httpMessage, inc, message } from './src/functions/hello';
 
 if (require.main === module) {
   message();
 
   let nb = 5;
-  console.log(nb);
+  logger.info(nb);
   nb = inc(nb);
-  console.log(nb);
+  logger.info(nb);
 
-  console.log(httpMessage('hello !'));
+  logger.info(httpMessage('hello !'));
 }

@@ -19,6 +19,7 @@
 
     "baseUrl": ".",
     "paths": {
+      "@common/*": ["src/common/*"],
       "@functions/*": ["src/functions/*"],
       "@libs/*": ["src/libs/*"],
       "@models/*": ["src/models/*"]

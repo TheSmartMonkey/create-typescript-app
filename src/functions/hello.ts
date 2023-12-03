@@ -1,7 +1,8 @@
+import { logger } from '@common/logger';
 import { HttpMessage } from '@models/hello.model';
 
 export function message(): void {
-  console.log('hello world !');
+  logger.info('hello world !');
 }
 
 export function inc(x: number): number {

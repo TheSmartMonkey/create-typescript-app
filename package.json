@@ -1,13 +1,15 @@
 {
   "name": "create-typescript-app",
+  "description": "Simple typescript app with jest for small and fast projects",
   "version": "1.0.0",
   "main": "dist/main.js",
   "scripts": {
     "fix": "npm run lint && npm run format",
-    "lint": "eslint src --ext .ts --fix",
+    "check": "npm run lint:check && npm run format:check",
+    "lint": "eslint . --ext .ts --fix",
     "lint:check": "eslint src --ext .ts",
     "clear": "rmdir /s \"dist\"",
-    "build": "tsc --build tsconfig.build.json",
+    "build": "tsc --build tsconfig.build.json && tsc-alias",
     "start": "npm run build && node dist/main.js",
     "watch": "nodemon",
     "dev": "npm run watch",
@@ -30,10 +32,11 @@
     "jest": "^29.3.1",
     "jest-junit": "^15.0.0",
     "nodemon": "^2.0.20",
+    "pino": "^8.16.2",
     "ts-jest": "^29.0.3",
     "ts-node": "^10.9.1",
+    "tsc-alias": "^1.8.8",
     "tsconfig-paths": "^4.1.1",
     "typescript": "^5.3.2"
-  },
-  "description": "Simple typescript app with jest for small and fast projects"
+  }
 }
