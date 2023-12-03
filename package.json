@@ -5,9 +5,10 @@
   "scripts": {
     "lint": "eslint src --ext .ts",
     "clear": "rmdir /s \"dist\"",
-    "build": "tsc",
+    "build": "tsc --build tsconfig.build.json",
     "start": "npm run build && node dist/main.js",
     "watch": "nodemon",
+    "dev": "npm run watch",
     "test": "jest",
     "format": "npx prettier --write .",
     "format:check": "npx prettier --check ."
