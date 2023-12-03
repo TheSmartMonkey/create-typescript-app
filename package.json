@@ -25,7 +25,7 @@
     "ts-jest": "^29.0.3",
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^4.1.1",
-    "typescript": "^4.9.4"
+    "typescript": "^5.3.2"
   },
   "description": "Simple typescript app with jest for small and fast projects"
 }
