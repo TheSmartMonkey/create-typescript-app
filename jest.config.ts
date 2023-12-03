@@ -7,9 +7,9 @@ export default {
   coverageReporters: ['json', 'lcov', 'clover', 'cobertura'],
   moduleNameMapper: {
     '@common/(.*)': '<rootDir>/src/common/$1',
-    '@functions/(.*)': '<rootDir>/src/functions/$1',
-    '@libs/(.*)': '<rootDir>/src/libs/$1',
     '@models/(.*)': '<rootDir>/src/models/$1',
+    '@modules/(.*)': '<rootDir>/src/modules/$1',
+    '@services/(.*)': '<rootDir>/src/services/$1',
   },
   reporters: ['default', 'jest-junit'],
   roots: ['<rootDir>'],

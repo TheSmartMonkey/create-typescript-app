@@ -20,9 +20,9 @@
     "baseUrl": ".",
     "paths": {
       "@common/*": ["src/common/*"],
-      "@functions/*": ["src/functions/*"],
-      "@libs/*": ["src/libs/*"],
-      "@models/*": ["src/models/*"]
+      "@models/*": ["src/models/*"],
+      "@modules/*": ["src/modules/*"],
+      "@services/*": ["src/services/*"],
     }
   },
   "include": ["**/*.ts"],

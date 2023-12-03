@@ -1,5 +1,5 @@
 import { logger } from '@common/logger';
-import { httpMessage, inc, message } from './src/functions/hello';
+import { httpMessage, inc, message } from './src/modules/hello';
 
 if (require.main === module) {
   message();
