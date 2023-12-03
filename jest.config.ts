@@ -11,7 +11,7 @@ export default {
     '@modules/(.*)': '<rootDir>/src/modules/$1',
     '@services/(.*)': '<rootDir>/src/services/$1',
   },
-  reporters: ['default', 'jest-junit'],
+  reporters: ['default'],
   roots: ['<rootDir>'],
   testEnvironment: 'node',
   transform: {
